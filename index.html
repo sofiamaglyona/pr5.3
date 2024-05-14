@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Математичні функції й константи</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9d8ff;
+            padding: 24px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Математичні функції й константи</h1>
+
+    <h2>Константи</h2>
+    <p id="constants"></p>
+
+    <h2>Функції</h2>
+    <p id="functions"></p>
+
+    <h2>Генератор випадкових чисел</h2>
+    <p id="random"></p>
+
+    <script>
+        // Константи
+        document.getElementById("constants").innerHTML =
+            "Значення константи е = " + Math.E + "<br>" +
+            "Значення константи π = " + Math.PI + "<br>" +
+            "Десятковий логарифм постійної Ейлера (е) = " + Math.log10(Math.E) + "<br>" +
+            "Двійковий логарифм постійної Ейлера (е) = " + Math.log2(Math.E) + "<br>" +
+            "Натуральний логарифм числа 10 = " + Math.log(10) + "<br>" +
+            "Натуральний логарифм числа 2 = " + Math.log(2) + "<br>" +
+            "Корінь квадратний із двох = " + Math.sqrt(2) + "<br>" +
+            "Корінь квадратний з однієї другої = " + Math.sqrt(1/2);
+
+        // Функції
+        document.getElementById("functions").innerHTML =
+            "Результат округлення числа 1,00123 у більшу сторону: y = " + Math.ceil(1.00123) + "<br>" +
+            "Результат округлення числа -3.1234 у більшу сторону: y = " + Math.ceil(-3.1234) + "<br>" +
+            "Результат округлення числа 1,00123 у меншу сторону: y = " + Math.floor(1.00123) + "<br>" +
+            "Результат округлення числа -3.1234 у меншу сторону: y = " + Math.floor(-3.1234) + "<br>" +
+            "Результат округлення числа 1,44 за правилами арифметики: y = " + Math.round(1.44);
+
+        // Генератор випадкових чисел
+        document.getElementById("random").innerHTML = "Формування випадкових чисел в інтервалі [0;1]: y = " + Math.random();
+    </script>
+</body>
+</html>
